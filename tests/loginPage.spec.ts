@@ -8,7 +8,7 @@ describe("Login Page Tests", () => {
   beforeEach(async ({ page }) => {
     await page.goto(url.baseUrl);
   });
-  test("Login with valid credentials", async ({ page }) => {
+  test(" @TC-104 Login with valid credentials", async ({ page }) => {
     await loginpage.login_page(
       page,
       testData.loginPage.username,
