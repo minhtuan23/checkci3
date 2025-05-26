@@ -10,7 +10,6 @@ export default defineConfig({
   reporter: 'html',
   use: {
     trace: 'on-first-retry',
-    headless: false,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
@@ -22,7 +21,7 @@ export default defineConfig({
       use: {
         browserName: 'chromium',
         channel: 'chrome',
-        headless: false,
+        headless: true,
         viewport: { width: 1920, height: 1080 },
         ignoreHTTPSErrors: true,
         screenshot: 'only-on-failure',
